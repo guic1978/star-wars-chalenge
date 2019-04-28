@@ -1,23 +1,40 @@
 import React from 'react';
 
-import { Card, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import classes from './planetCard.module.css';
+import CardBackground from '../../../assets/images/planets/card-background.png'
 
-const planetCard = props => (
-    <Card className={classes.planet}>
-        <Card.Body>
-            <Card.Title>Planet</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">Description</Card.Subtitle>
-            <Card.Text>
-                <p>{props.planet.name}</p>
-                <p>{props.planet.population}</p>
-                <p>{props.planet.climate}</p>
-                <p>{props.planet.terrain}</p>
-                <p>{props.planet.films.length}</p>
-            </Card.Text>
-            <Button onClick={props.clicked}>NEXT</Button>
-        </Card.Body>
-    </Card>
-)
+import Aux from '../../../hoc/Auxiliar';
+
+const planetCard = props => {
+
+    const population = /^\d+$/.test(props.planet.population) ? parseInt(props.planet.population, 10).toLocaleString('pt-br') : props.planet.population;
+
+    return (
+        <Aux>
+            <div
+                className={classes.planetCard}
+                style={{
+                    backgroundImage: "url('" + CardBackground + "')",
+                    backgroundPosition: "center center"
+                }}
+            >
+                <div className={classes.planetImg}>
+                    <img
+                        src={require(`../../../assets/images/planets/${props.planet.name}.png`)} alt="{props.planet.name}" />
+                </div>
+                <p className={classes.planetTitle}>{props.planet.name}</p>
+                <div className={classes.planetDescription}>
+                    <p>POPULATION: {population}</p>
+                    <p>CLIMATE: {props.planet.climate}</p>
+                    <p>TERRAIN: {props.planet.terrain}</p>
+                    <p>FEATURE IN {props.planet.films.length} FILMS</p>
+                </div>
+            </div>
+
+            <div className="mt-3 text-center"><Button onClick={props.clicked}>NEXT</Button></div>
+        </Aux>
+    )
+}
 
 export default planetCard;

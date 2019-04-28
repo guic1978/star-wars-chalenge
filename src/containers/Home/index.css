@@ -3,12 +3,14 @@ body {
   }
 
   .planetCard {
-    animation: 18s card ease-in;
+    /* animation: 18s card ease-in; */
+    animation: card ease-in;
+
     transform-origin: 50% 50%;
 
     position: absolute !important;
     margin: auto;
-    top: 25%;
+    top: 20%;
     left: 35%;
     width: 30%
   }

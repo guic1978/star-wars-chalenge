@@ -56,10 +56,10 @@ class Home extends Component {
 
         return (
             <div>
-                <Intro />
+                {/* <Intro />
                 <div className="logo">
                     <Logo />
-                </div>
+                </div> */}
                 <Stars />
                 <div className="planetCard">
                     {planet}

@@ -19,7 +19,7 @@ class Stars extends PureComponent {
             const xy = this.getRandomPosition();
 
             this.stars.push(
-                <div className="star" style={{ top: xy[0] + 'px', left: xy[1] + 'px' }}></div>
+                <div key={i} className="star" style={{ top: xy[0] + 'px', left: xy[1] + 'px' }}></div>
             )
         }
 
