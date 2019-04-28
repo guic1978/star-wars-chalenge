@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import axios from '../../axios-starwars-api';
 
+import Stars from '../../components/stars/Stars';
+import PlanetCard from '../../components/planet/card/planetCard';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 class Home extends Component {
     state = {
         planets: null,
@@ -44,21 +49,12 @@ class Home extends Component {
         let planet = null;
 
         if (this.state.planets) {
-            planet = this.state.planets[this.state.planets.length - 1];
-            planet = (
-                <div>
-                    <p>{planet.name}</p>
-                    <p>{planet.population}</p>
-                    <p>{planet.climate}</p>
-                    <p>{planet.terrain}</p>
-                    <p>{planet.films.length}</p>
-                </div>
-            );
+            planet = <PlanetCard clicked={this.setRandomOrderPlanets} planet={this.state.planets[this.state.planets.length - 1]} />
         }
 
         return (
             <div>
-                <button onClick={this.setRandomOrderPlanets}></button>
+                <Stars />
                 {planet}
             </div>
         );
