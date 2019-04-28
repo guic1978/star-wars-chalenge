@@ -1,28 +1,31 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import './stars.css';
 
-const stars = () => {
-    const numStars = 100;
-    let stars = [];
+class Stars extends PureComponent {
+    numStars = 100;
+    stars = [];
 
-    for (let i = 0; i < numStars; i++) {
-
-        const xy = getRandomPosition();
-
-        stars.push(
-            <div className="star" style={{ top: xy[0] + 'px', left: xy[1] + 'px' }}></div>
-        )
+    getRandomPosition = () => {
+        const y = window.innerWidth;
+        const x = window.innerHeight;
+        const randomX = Math.floor(Math.random() * x);
+        const randomY = Math.floor(Math.random() * y);
+        return [randomX, randomY];
     }
 
-    return stars.reduce((prev, curr) => [prev, '', curr]);
+    render() {
+        for (let i = 0; i < this.numStars; i++) {
+
+            const xy = this.getRandomPosition();
+
+            this.stars.push(
+                <div className="star" style={{ top: xy[0] + 'px', left: xy[1] + 'px' }}></div>
+            )
+        }
+
+        return this.stars.reduce((prev, curr) => [prev, '', curr]);
+    }
+
 }
 
-const getRandomPosition = () => {
-    const y = window.innerWidth;
-    const x = window.innerHeight;
-    const randomX = Math.floor(Math.random() * x);
-    const randomY = Math.floor(Math.random() * y);
-    return [randomX, randomY];
-}
-
-export default stars;
+export default Stars;

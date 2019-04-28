@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import axios from '../../axios-starwars-api';
 
+import Intro from '../../components/intro/intro';
 import Stars from '../../components/stars/Stars';
 import PlanetCard from '../../components/planet/card/planetCard';
+import Logo from '../../components/logo/logo';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -54,8 +56,14 @@ class Home extends Component {
 
         return (
             <div>
+                <Intro />
+                <div className="logo">
+                    <Logo />
+                </div>
                 <Stars />
-                {planet}
+                <div className="planetCard">
+                    {planet}
+                </div>
             </div>
         );
     }

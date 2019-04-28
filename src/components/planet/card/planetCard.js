@@ -1,10 +1,9 @@
 import React from 'react';
 
 import { Card, Button } from 'react-bootstrap';
-
 import classes from './planetCard.module.css';
 
-const PlanetCard = props => (
+const planetCard = props => (
     <Card className={classes.planet}>
         <Card.Body>
             <Card.Title>Planet</Card.Title>
@@ -21,4 +20,4 @@ const PlanetCard = props => (
     </Card>
 )
 
-export default PlanetCard;
+export default planetCard;
