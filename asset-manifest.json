@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.328c6639.chunk.css",
+    "main.js": "/static/js/main.0103e2f8.chunk.js",
+    "main.js.map": "/static/js/main.0103e2f8.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.5b145711.chunk.js": "/static/js/2.5b145711.chunk.js",
+    "static/js/2.5b145711.chunk.js.map": "/static/js/2.5b145711.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.db57861d8d05384fc725a2c5fa06d178.js": "/precache-manifest.db57861d8d05384fc725a2c5fa06d178.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.328c6639.chunk.css.map": "/static/css/main.328c6639.chunk.css.map",
+    "static/media/Alderaan.png": "/static/media/Alderaan.5242a58a.png",
+    "static/media/Bespin.png": "/static/media/Bespin.dd3a295a.png",
+    "static/media/Coruscant.png": "/static/media/Coruscant.7509f7ba.png",
+    "static/media/Dagobah.png": "/static/media/Dagobah.70d93c40.png",
+    "static/media/Endor.png": "/static/media/Endor.d8a0a8c3.png",
+    "static/media/Geonosis.png": "/static/media/Geonosis.a6e404bf.png",
+    "static/media/Hoth.png": "/static/media/Hoth.d545be92.png",
+    "static/media/Kamino.png": "/static/media/Kamino.cef1fe97.png",
+    "static/media/Naboo.png": "/static/media/Naboo.4e1a0a64.png",
+    "static/media/Yavin IV.png": "/static/media/Yavin IV.3ec1a457.png",
+    "static/media/card-background.png": "/static/media/card-background.4030b610.png"
+  }
+}
