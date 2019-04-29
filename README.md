@@ -1,4 +1,4 @@
-## ⭐ Stars Wars Planets Chalenge
+## ⭐ Stars Wars Planets Challenge
 
 ### References
 
@@ -14,7 +14,7 @@ Images Source - Wookieepedia The Star Wars Wiki<br>
 Open [https://starwars.fandom.com/](https://starwars.fandom.com/)
 
 Treated Images - Figma<br>
-Open [https://www.figma.com/file/UQWy3Nc8eTZvMaUFrnP6y7Re/star-wars?node-id=1%3A7] (https://www.figma.com/file/UQWy3Nc8eTZvMaUFrnP6y7Re/star-wars?node-id=1%3A7)
+Open [https://www.figma.com/file/UQWy3Nc8eTZvMaUFrnP6y7Re/star-wars?node-id=1%3A7](https://www.figma.com/file/UQWy3Nc8eTZvMaUFrnP6y7Re/star-wars?node-id=1%3A7)
 
 Favicon - Favicon & App Icon Generator<br>
 Open [https://www.favicon-generator.org/](https://www.favicon-generator.org/).
