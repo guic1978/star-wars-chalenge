@@ -1,22 +1,16 @@
-/* .planet {
-    position: absolute !important;
-    margin: auto;
-    top: 25%;
-    left: 35%;
-    width: 30%
-} */
-
 .planetCard {
-    width: 390px;
-    height: 508px;
+    width: 382px;
+    height: 500px;
     margin: auto;
     position: relative;
     padding: 20px;
+    background-position: -4px 0px;
+    box-shadow: 0 0 8px #FFF;
 }
 
 .planetImg {
     position: absolute;
-    right: 8px;
+    right: 2px;
     top: 2px;
 }
 
@@ -34,4 +28,54 @@
     font-size: 24px;
     text-transform: uppercase;
     text-align: center;
+    line-height: 1;
+}
+
+.descriptionItem {
+    font-size: 14px;
+    color: grey;
+}
+
+.descriptionFilms {
+    position: absolute;
+    top: 226px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.buttonNext {
+    animation: btn 22s ease-in;
+    -webkit-animation: btn 22s ease-in;
+}
+
+.buttonNext button {
+    border: 0;
+    margin: 0;
+    background: none;
+    padding: 0;
+    color: rgb(75, 213, 238);
+    font-weight: bold;
+}
+
+.buttonNext button:hover {
+    text-shadow: 0 0 5px white;
+}
+
+.buttonNext button:focus {
+    outline: 0;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    89% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }

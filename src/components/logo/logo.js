@@ -5,7 +5,7 @@ const logo = (props) => {
     return (
         <section className={classes.logo}>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xlinkHref="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                width="693.615px" height="419.375px" viewBox="0 0 693.615 419.375" enable-background="new 0 0 693.615 419.375"
+                width="693.615px" height="419.375px" viewBox="0 0 693.615 419.375" enableBackground="new 0 0 693.615 419.375"
                 >
                 <g id="Layer_2">
                     <g>

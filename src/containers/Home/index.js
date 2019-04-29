@@ -37,7 +37,7 @@ class Home extends Component {
     setRandomOrderPlanets = () => {
         if (this.state.planets) {
             let planets = [...this.state.planets];
-            const num = Math.floor(Math.random() * planets.length - 5);
+            const num = Math.abs(Math.floor(Math.random() * planets.length - 5));
             const planet = planets.splice(num, 1);
             planets.push(...planet);
 
@@ -56,10 +56,10 @@ class Home extends Component {
 
         return (
             <div>
-                {/* <Intro />
+                <Intro />
                 <div className="logo">
                     <Logo />
-                </div> */}
+                </div>
                 <Stars />
                 <div className="planetCard">
                     {planet}

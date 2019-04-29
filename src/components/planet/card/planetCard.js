@@ -15,8 +15,7 @@ const planetCard = props => {
             <div
                 className={classes.planetCard}
                 style={{
-                    backgroundImage: "url('" + CardBackground + "')",
-                    backgroundPosition: "center center"
+                    backgroundImage: "url('" + CardBackground + "')"
                 }}
             >
                 <div className={classes.planetImg}>
@@ -25,14 +24,14 @@ const planetCard = props => {
                 </div>
                 <p className={classes.planetTitle}>{props.planet.name}</p>
                 <div className={classes.planetDescription}>
-                    <p>POPULATION: {population}</p>
-                    <p>CLIMATE: {props.planet.climate}</p>
-                    <p>TERRAIN: {props.planet.terrain}</p>
-                    <p>FEATURE IN {props.planet.films.length} FILMS</p>
+                    <p><span className={classes.descriptionItem}>POPULATION</span><br /> {population}</p>
+                    <p><span className={classes.descriptionItem}>CLIMATE</span><br /> {props.planet.climate}</p>
+                    <p><span className={classes.descriptionItem}>TERRAIN</span><br /> {props.planet.terrain}</p>
+                    <p className={classes.descriptionFilms}>FEATURED IN {props.planet.films.length} FILMS</p>
                 </div>
             </div>
 
-            <div className="mt-3 text-center"><Button onClick={props.clicked}>NEXT</Button></div>
+            <div className={["mt-3", "text-center", classes.buttonNext].join(' ')} ><button onClick={props.clicked}>NEXT</button></div>
         </Aux>
     )
 }
