@@ -23,7 +23,7 @@ Source Code @ Github<br>
 Open [https://github.com/guic1978/star-wars-chalenge](https://github.com/guic1978/star-wars-chalenge)
 
 Published @ Github Pages<br>
-Open [https://guic1978.github.io/star-wars](https://guic1978.github.io/star-wars)
+Open [https://guic1978.github.io/star-wars-chalenge/](https://guic1978.github.io/star-wars-chalenge/)
 
 Created by Guilherme Reis<br>
 Open my resume [https://guic1978.github.io/resume/](https://guic1978.github.io/resume/)
